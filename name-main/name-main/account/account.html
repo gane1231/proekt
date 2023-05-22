@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+	<header>
+        <nav>
+            <ul>
+                <li><a href="/name-main/main/main.html"><img src="source/Logo.svg" alt=""></a></li>
+                <li><a href="#" class="btn">Личный кабинет</a></li>
+            </ul>
+        </nav>
+	</header>
+	<div class="container">
+		<article id="avatar" class="avatar"><img src="source/avatar.png"></article>
+		<article id="name" class="info">
+			<h1>Name</h1>
+			<p>Направление:</p>
+			<select name="choicedirection" id="choice" onchange="choiceDirection()">
+				<option >Выберите профессию</option>
+				<option value="frontend">Frontend разработчик</option>
+				<option value="backend">Backend разработчик</option>
+			</select>
+		</article>
+	</div>
+	<div class="conteiner">
+		<article class="lvl"><img src="source/level.png" alt=""></article>
+	</div>
+
+	<div class="_active" id="frontend_direction">
+<div class="dropdown">
+<button onclick="myFunction1()" class="dropbtn">HTML</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics">Основы HTML</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction2()" class="dropbtn">CSS</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics">Основы CSS</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction3()" class="dropbtn">Flex</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex ">Flex</a>
+	<a href="https://www.youtube.com/watch?v=phWxA89Dy94">Flexbox</a>
+	<a href="https://flexboxfroggy.com/#ru">Практика</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction4()" class="dropbtn">Grid</button>
+	<div id="myDropdown" class="dropdown-content">
+	  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">Макет сетки CSS</a>
+	</div>
+  </div>
+
+<div class="dropdown">
+<button onclick="myFunction5()" class="dropbtn">CSS препроцессоры</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://www.youtube.com/watch?v=Mrq2ora_p0o">Препроцессоры SASS/SCSS</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction6()" class="dropbtn">Git/GitHub</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://www.youtube.com/watch?v=O00FTZDxD0o">Полный курс для начинающих</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction7()" class="dropbtn">JS</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://learn.javascript.ru/">Учебник JS</a>
+	<a href="https://www.youtube.com/watch?v=CxgOKJh4zWE">Полный курс JS для начинающих</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction8()" class="dropbtn">JS Core</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://www.youtube.com/watch?v=KyFA-WefJxY">AJAX</a>
+	<a href="https://www.youtube.com/watch?v=DuWyc76lYC4 ">DOM</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction9()" class="dropbtn">Rest API</button>
+	<div id="myDropdown" class="dropdown-content">
+	  <a href="https://habr.com/ru/articles/475086/">Rest API</a>
+	</div>
+  </div>
+
+<div class="dropdown">
+  <button onclick="myFunction10()" class="dropbtn">Алгоритмы и структуры данных</button>
+	<div id="myDropdown" class="dropdown-content">
+	  <a href="https://proglib.io/p/rasprostranennye-algoritmy-i-struktury-dannyh-v-javascript-osnovnye-ponyatiya-i-rabota-s-massivami-2021-10-06">Основные понятия и работа с массивами</a>
+	</div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction11()" class="dropbtn">Фреймворки js</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://www.youtube.com/watch?v=GNrdg3PzpJQ">React Js</a>
+	<a href="https://www.youtube.com/watch?v=Rf54BH35yrY">Angular</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction12()" class="dropbtn">TypeScript</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://habr.com/ru/articles/663964/">Введение</a>
+  </div>
+</div>
+ 
+<div class="dropdown">
+  <button onclick="myFunction13()" class="dropbtn">Основы figma</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="https://www.youtube.com/watch?v=DNG1SZ8y0l8 ">Как пользоваться фигмой?</a>
+  </div>
+</div>
+</div>
+
+<div id="backend_direction" class="_active">
+	<div class="dropdown">
+	<button onclick="myFunction14()" class="dropbtn" >Языки программирования</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://pythonworld.ru/samouchitel-python">Python полный курс</a>
+		<a href="https://www.youtube.com/watch?v=34Rp6KVGIEM&list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa">Python полный курс в формате видео</a>
+		<a href="https://www.youtube.com/watch?v=L-FyeHQwo4U&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ">Фреймворки Python</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction15()" class="dropbtn">PHP</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://www.youtube.com/watch?v=GfHSbgyHN_I&list=PLDyJYA6aTY1m5zGQVcEYIoSFz2GD8u7cC">PHP полный видео-курс</a>
+		<a href="https://www.youtube.com/watch?v=aNcbYt8BykY&list=PLXCVm4GFpx5CZf4X5ppNJTPsaGwSlBXLX">PHP Фреймворки</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction16()" class="dropbtn">Java</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://www.youtube.com/watch?v=U2OliQwRb6c&list=PLDyJYA6aTY1lT614ixLYq48har7EnCXpk">Java полный видео-курс</a>
+		<a href="https://www.youtube.com/watch?v=5ePo08sqcpk&list=PLAma_mKffTOR5o0WNHnY0mTjKxnCgSXrZ">Java Фреймворки</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button onclick="myFunction17()" class="dropbtn">C#</button>
+		<div id="myDropdown" class="dropdown-content">
+		  <a href="https://www.youtube.com/watch?v=_8yZYhAkQjQ&list=PLDyJYA6aTY1laYPs6iS-SrYl9DZLVCUKr">C# полный видео-курс</a>
+		  <a href="https://www.youtube.com/watch?v=X2ohiL4cN7c&list=PL0lO_mIqDDFVI0xwaYbm7h9ewYu5hftfA">C# Фреймворки</a>
+		</div>
+	  </div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction18()" class="dropbtn">Ruby</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://www.youtube.com/watch?v=j10cRWjgAfY&list=PL9Gk1O6XmsobqIn8FgGmmmK32xMjTabgj">Ruby полный видео-курс</a>
+		<a href="https://www.youtube.com/watch?v=6_ek4hokiak&list=PLWlFXymvoaJ_IY53-NQKwLCkR-KkZ_44-">Ruby Фреймворки</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction19()" class="dropbtn">Git/GitHub</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://www.youtube.com/watch?v=O00FTZDxD0o">Полный курс для начинающих</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction20()" class="dropbtn">Базы данных</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://www.youtube.com/watch?v=ERZoxHuQ-QI&list=PLDyJYA6aTY1lPhlF2iHiLlkDW6bd39VmE">MySQL и базы данных</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction21()" class="dropbtn">RESTFUL API</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="https://www.youtube.com/watch?v=v7zq1DntN_Y">Что такое Rest API, RESTful API</a>
+		</div>
+	</div>
+	
+	<div class="dropdown">
+	  <button onclick="myFunction22()" class="dropbtn">Алгоритмы и структуры данных</button>
+		<div id="myDropdown" class="dropdown-content">
+		  <a href="https://www.youtube.com/watch?v=2kSx7wMAhcc&list=PLAma_mKffTOT_qpTFv4KdD9DhOAUd5Rqy">Алгоритмы и структуры данных</a>
+		</div>
+	  </div>
+	
+	<div class="dropdown">
+	  <button onclick="myFunction23()" class="dropbtn">Тестирование кода</button>
+		<div id="myDropdown" class="dropdown-content">
+		  <a href="https://www.youtube.com/watch?v=FuVFHr4US94">Unit тестирование в QA</a>
+		  <a href="https://www.youtube.com/watch?v=lKo-F3gSl7I">Unit тесты в Python</a>
+		  <a href="https://www.youtube.com/watch?v=dEr0ZZBh1ww&list=PLvItDmb0sZw-dolIJ9mSNolTvW7CnQlSG">Unit тестирование в С#</a>
+		</div>
+	</div>
+	
+	<div class="dropdown">
+	<button onclick="myFunction24()" class="dropbtn">Фреймворки js</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://www.youtube.com/watch?v=GNrdg3PzpJQ">React Js</a>
+		<a href="https://www.youtube.com/watch?v=Rf54BH35yrY">Angular</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button onclick="myFunction25()" class="dropbtn">TypeScript</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://habr.com/ru/articles/663964/">Введение</a>
+	  </div>
+	</div>
+	</div>
+
+
+
+
+
+</body>									   
+<script src="js/account.js"></script>
+</html>
